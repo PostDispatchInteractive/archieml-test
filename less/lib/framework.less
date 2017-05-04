@@ -1,0 +1,160 @@
+body {
+    padding-top: 52px;
+    font-family: 'Merriweather', Georgia, Times, serif;
+}
+.navbar-default {
+    border: none;
+    -webkit-box-shadow: inset 0 1px #fff, 0 1px 3px rgba(34, 25, 25, 0.4);
+    -moz-box-shadow: inset 0 1px #fff, 0 1px 3px rgba(34, 25, 25, 0.4);
+    box-shadow: inset 0 1px #fff, 0 1px 3px rgba(34, 25, 25, 0.4);
+}
+.navbar-brand img {
+    height: 47px;
+}
+.navbar-default .navbar-nav>li>a {
+    padding-top: 18px;
+    padding-bottom: 19px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    background-color: #B12227;
+    color: #fff;
+    cursor: pointer;
+}
+.navbar-title {
+    float: left;
+}
+.navbar-title h3 {
+    margin-top: 18px;
+    padding-left: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+    font-family: 'Merriweather', Georgia, Times, serif;
+}
+.navbar-nav {
+    float: right;
+}
+.navbar-nav {
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+.jumbotron {
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 76vh;
+    background: url('http://placehold.it/1500&text=hero+image+here') center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.intro {
+    margin: 0 auto;
+    max-width: 850px;
+    font-size: 22px;
+    line-height: 1.9em;
+}
+.intro:first-child:first-letter {
+    float: left;
+    padding-top: 38px;
+    padding-right: 20px;
+    padding-left: 3px;
+    color: #990000;
+    font-size: 132px;
+    line-height: 60px;
+}
+.col-md-12 {
+    max-height: 660px;
+    height: 35vw;
+    background: url('http://placehold.it/1200&text=restaurant+image+here') center center;
+}
+.col-md-12 h2 {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    font-weight: 900;
+    font-size: 6em;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+.col-md-4 {
+    width: 32%;
+    height: 15vw;
+    background: url('http://placehold.it/500&text=restaurant+image+here') center center;
+}
+.col-md-4:nth-child(2) {
+    margin: 0 2%;
+}
+.col-md-4 h3 {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    font-weight: 900;
+    font-size: 2em;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+.row {
+    margin: 50px auto;
+}
+.container {
+    max-width: 940px;
+}
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-width: 320px) and (max-width: 736px) {
+    body {
+        padding-top: 45px;
+    }
+    .navbar-brand img {
+        height: 40px;
+    }
+    .navbar-default .navbar-nav>li>a {
+        padding-top: 10px;
+    }
+    .navbar-default .navbar-nav>li>a:hover {
+        background-color: #990000;
+        color: #fff;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .navbar-title {
+        display: none;
+    }
+    .navbar-nav {
+        float: left;
+    }
+    .jumbotron {
+        height: 40vh;
+    }
+    .intro {
+        margin: 0 10px;
+        font-size: 16px;
+        line-height: 1.8em;
+    }
+    .intro:first-child:first-letter {
+        float: left;
+        padding-top: 19px;
+        padding-right: 10px;
+        padding-left: 0px;
+        color: #990000;
+        font-size: 85px;
+        line-height: 60px;
+    }
+}
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        padding-top: 52px;
+    }
+    .navbar-brand img {
+        height: 47px;
+    }
+    .jumbotron {
+        height: 55vh;
+    }
+    .intro {
+        max-width: 625px;
+    }
+}
