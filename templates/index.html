@@ -1,1 +1,25 @@
 {% extends '_base.html' %}
+
+
+{%- block content -%}
+
+	<h1 class="story-heading interactive-headline" itemprop="headline">{{COPY.headline}}</h1>
+	<p class="interactive-leadin summary">{{COPY.leadin}}</p>
+
+	{%- for section in COPY.sections -%}
+
+	<div class="g-section" id="">
+
+		<img class="g-lil-guy" alt="" width="200" src="https://static01.nyt.com/newsgraphics/2015/01/30/trick-plays/78987577b92cf7a0e8403f999e96f0a93d0135d2/{{section.image}}.jpg" />
+
+		<div class="g-section-hed">
+			<p class="g-kicker">{{section.kicker}}</p>
+			<h2>{{section.hed}}</h2>
+		</div>
+		<div class="g-section-copy g-clearfix">
+			<p><span class="g-intro">{{section.intro}}</span></p>
+		</div>
+	</div>
+	{%- endfor -%}
+
+{%- endblock -%}

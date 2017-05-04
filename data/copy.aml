@@ -1,0 +1,56 @@
+﻿headline: Bait and Switch, a Common Ploy of Patriots and Seahawks
+leadin: The Patriots and the Seahawks share a knack for the trick play, making it look like something tht the defense recognizes. But when the defense reacts, these teams turn the play into something entirely different.
+
+
+[sections]
+
+
+kicker: New England Patriots
+hed: Patriots vs. Ravens, Jan. 10
+intro: REceiver Julian Edelman is dangerous any time he touches the ball, and the Patriots find creative ways to use him. Here, the Patriots throw whatlooks like a wide-receiverscreen to Edelman. But looks can be deceiving -- just ask the Ravens.
+video: http://int.nyt.com/data/videotape/finished/2015/01/1422654167/Patriots_v6-{{size}}.{{format}}
+image: c-pats
+
+
+kicker: Seattle Seahawks
+hed: Seahawks vs. Eagles, Dec. 7
+intro: The Seahawks' one-two punch of quarterback Russell Wilson and running back Marshawn Lynch can give defenses fits. Wilson is as dangerous with his legs as with his arm, which can cause defenses to overreact to his every move.
+video: http://int.nyt.com/data/videotape/finished/2015/01/1422659383/seahawks_v1_4-{{size}}.{{format}}
+image: c-seahawks
+
+
+
+
+________________
+
+
+{content}
+project_name: ArchieML test
+project_url: http://localhost:8000/
+cdn_url: http://localhost:8000/
+headline: This is a test of connecting ArchieML to the NPR app-template
+Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel nibh non libero porta sodales a quis lectus. Donec consequat auctor mollis.
+election_date: May 4, 2017
+
+
+{share}
+meta_description: Cool stuff for St. Louis city, St. Louis County, St. Charles County, Jefferson County, Franklin County, Lincoln County, and Warren County.
+meta_keywords: St. Louis, STL, Saint Louis, St Louis, Missouri, MO, St. Louis Post-Dispatch, stltoday, www.stltoday.com
+share_url: http://graphics.stltoday.com/apps/elections/
+twitter_handle: @stltoday
+twitter_text: Cool stuff for St. Louis city, St. Louis County, St. Charles County, Jefferson County, Franklin County, Lincoln County, and Warren County.
+twitter_image_url: http://graphics.stltoday.com/apps/elections/img/elections-preview.jpg
+twitter_title: ArchieML test
+facebook_title: ArchieML test
+facebook_url: http://graphics.stltoday.com/apps/elections/
+facebook_text: Cool stuff for St. Louis city, St. Louis County, St. Charles County, Jefferson County, Franklin County, Lincoln County, and Warren County.
+facebook_image_url: http://graphics.stltoday.com/apps/elections/img/elections-preview.jpg
+facebook_site_name: STLtoday.com
+facebook_article_publisher: https://www.facebook.com/STLPD
+facebook_app_id: 205112096200104
+
+
+
+
+:ignore everything below this line
+Original video files are on the graphics server in active/sports

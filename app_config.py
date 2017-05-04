@@ -103,8 +103,8 @@ DEBUG = True
 """
 COPY EDITING
 """
-COPY_GOOGLE_DOC_KEY = '1sTHd515rRjCNp9PFbUhixPD1YMes_kxyc5UQwSGzqU0'
-COPY_PATH = 'data/copy.xlsx'
+COPY_GOOGLE_DOC_KEY = '1Y2TUoiF-kReT7llw7aac5yUj7EkhrXXOt8DCko01Uqc'
+COPY_PATH = 'data/copy.aml'
 
 """
 SHARING

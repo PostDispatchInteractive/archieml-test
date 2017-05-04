@@ -48,41 +48,8 @@ def less():
             print 'It looks like "lessc" isn\'t installed. Try running: "npm install"'
             raise
 
-@task
-def jst():
-    """
-    Render Underscore templates to a JST package.
-    """
-    try:
-        local('node_modules/universal-jst/bin/jst.js --template underscore jst www/js/templates.js')
-    except:
-        print 'It looks like "jst" isn\'t installed. Try running: "npm install"'
 
-@task
-def app_config_js():
-    """
-    Render app_config.js to file.
-    """
-    from static import _app_config_js
 
-    with _fake_context('/js/app_config.js'):
-        response = _app_config_js()
-
-    with open('www/js/app_config.js', 'w') as f:
-        f.write(response.data)
-
-@task
-def copytext_js():
-    """
-    Render COPY to copy.js.
-    """
-    from static import _copy_js
-
-    with _fake_context('/js/copytext.js'):
-        response = _copy_js()
-
-    with open('www/js/copy.js', 'w') as f:
-        f.write(response.data)
 
 @task(default=True)
 def render_all():
@@ -92,9 +59,9 @@ def render_all():
     from flask import g
 
     less()
-    jst()
-    app_config_js()
-    copytext_js()
+    # jst()
+    # app_config_js()
+    # copytext_js()
 
     compiled_includes = {}
 

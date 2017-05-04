@@ -11,7 +11,9 @@
     {% include '_google_tag_manager.html' %}
 
     {% include '_navigation.html' %}
-    {% include '_content.html' %}
+    <div id="content">
+        {% block content %}{% endblock content %}
+    </div>
 
     <!-- Need to include advertising -->
     {% include '_credits.html' %}
