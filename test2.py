@@ -123,9 +123,12 @@ class Copy(object):
 #     print section
 
 
-
-with open('data/copy.txt') as f:
-    a = archieml.load(f)
+# Open the file
+with open('data/copy.aml') as f:
+    # REMOVE the BOM. Google Docs downloaded as "text/plain" apparently save as UTF-8 with a BOM.
+    # Failing to remove the BOM will cause the first line of the document to be parsed incorrectly
+    data = f.read().decode("utf-8-sig").encode("utf-8")
+    a = archieml.loads(data)
 
 print a
 for section in a:

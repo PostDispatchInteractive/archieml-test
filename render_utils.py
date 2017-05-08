@@ -184,25 +184,11 @@ def make_context(asset_depth=0):
     context = flatten_app_config()
 
     try:
-        # context['COPY'] = copytext.Copy(app_config.COPY_PATH)
-
-        #######################################
-        ## 
-        ##  MAKING A CONTEXT FROM ARCHIEML
-        ## 
-        ##  The ArchieML-python library uses OrderedDicts when it parses an AML text file.
-        ##  This would be fine for most contexts, but it prevents me from using dot notation
-        ##  on Jinja templates, such as {{COPY.share.meta_description}}.
-        ## 
-        ##  For now I have hacked the archieml-python library to use a third-part ObjDict 
-        ##  instead of OrderedDict. It maintains order while also allow dot notation.
-        ## 
-        ##  But this is not ideal. I would rather find a way to create a class like
-        ##  copytext's Copy() class.
-
         with open(app_config.COPY_PATH) as f:
-            context['COPY'] = archieml.load(f)
-
+            # REMOVE the BOM. Google Docs downloaded as "text/plain" apparently save as UTF-8 with a BOM.
+            # archieml-python will fail to parse first line of the document correctly if there's a BOM.
+            data = f.read().decode('utf-8-sig').encode('utf-8')
+            context['COPY'] = archieml.loads(data)
     except:
         pass
 
